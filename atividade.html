@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<body>
+
+</body>
+<script>
+    let numero = parseInt(prompt("Digite um n: "));
+    let resultado1 = (numero)-1
+    let resultado2 = (numero)+1
+    
+    alert("Os números vizinhos são: "+"\n"+resultado1+" e "+resultado2);
+
+   /////////////////////////////////////////////////////////////////////////////////////////////////
+    let gastou = parseInt(prompt("Qual foi o valor que você gastou na pizzaria hoje? : "));
+    let clientes = parseInt(prompt("\nE quantas pessoas irão pagar a conta? : "));
+    let valorClientes = (gastou)/(clientes);
+    if(clientes==1){
+        alert("O valor a ser pago é de R$"+valorClientes.toFixed(2));
+    }else{
+        alert("O valor a ser pago é de R$"+valorClientes.toFixed(2)+" Por pessoa");
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+    let comprou = parseInt(prompt("Quanto custa o produto que você comprou? : "));
+        let informacao = prompt("Temos duas formas de pagamento, À Vista ou Parcelado. Qual você escolhe? : ");
+        if(informacao == "Parcelado"){
+            let vezes = parseInt(prompt("Em quantas vezes você quer parcelar? : "));
+            let exem = (comprou)/(vezes);
+            alert("A compra ficou em "+vezes+"x de R$"+exem.toFixed(2));
+    }else if(informacao == "À Vista"){
+            let desconto = comprou * 0.10;
+            let precoComDesconto = comprou - desconto;
+            alert("A compra ficou em R$" + precoComDesconto.toFixed(2)+" com desconto de 10% do valor original por ter sido comprado À Vista");
+        }
+    </script>
