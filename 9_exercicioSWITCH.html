@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script>
+    let codigo = Number(prompt("Código do Produto desejado"));
+    let quanto = Number(prompt("Quantidade: "));
+    let valor;
+   
+   
+    switch(codigo){
+        case 1:
+        valor = 0.20
+            alert("Pão Francês: R$"+(valor*quanto).toFixed(2));
+            
+            break;
+        case 2:
+        valor = 3
+            alert("Mortadela: R$"+(valor*quanto).toFixed(2));
+            break;
+        case 3:
+        valor = 3.5
+            alert("Muçarela: R$"+(valor*quanto).toFixed(2));
+            break;
+        case 4:
+        valor = 5.50
+            alert("Sonho: R$"+(valor*quanto).toFixed(2));
+            break;
+        case 5:
+        valor = 6
+            alert("Pão de Forma: R$"+(valor*quanto).toFixed(2));
+            break;
+        default:
+        alert("Código do Produto Inválido");
+            break;
+    }
+</script>

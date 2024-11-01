@@ -1,0 +1,37 @@
+<!-- Faça um programa em javascript que exiba a
+ classificação do atleta conforme segue
+ 6-9 - junior
+ 10 - 13 - infantil
+ 14 - 17 - teen
+ 18 - Adulto
+-->
+<meta charset="UTF-8">
+<script>
+    let idade = Number(prompt("Digite a idade"));
+    switch(idade){
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            alert("Júnior");
+            break;
+        case 10:
+        case 11:
+        case 12:
+        case 13:
+            alert("Infantil");
+            break;
+        case 14:
+        case 15:
+        case 16:
+        case 17:
+            alert("Teen");
+            break;
+        case 18:
+            alert("Adulto");
+            break;
+        default:
+            alert("Idade inválida");
+            break;
+}
+</script>

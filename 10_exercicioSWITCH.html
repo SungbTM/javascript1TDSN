@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    let gas = prompt("Você quer Gasolina (pressione (G) ) ou Etanol (pressione (E) ) ??");
+    let eta = Number(prompt("Quantos Litros?: "));
+    let valor;
+    switch(gas){
+        case 'G':
+        case 'g':
+            valor = 5.8
+            alert(eta+"L de Gasolina R$"+(valor*eta).toFixed(2));
+            break;
+        case 'E':
+        case 'e':
+            valor = 4.2
+            alert(eta+"L de Etanol R$"+(valor*eta).toFixed(2));
+            break;
+        default:
+            alert("Tecla inválida!");
+            break;
+    }
+</script>
