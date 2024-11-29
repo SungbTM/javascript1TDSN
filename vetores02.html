@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    /* Faça um progrma que receba o nome de
+    5 pokemons em um vetor e imprima os nomes recebidos 
+    */
+    // Declara o vetor vazio
+    let pokemon = []
+    // Alimente o vetor com um for
+    for(let i=0; i<5; i++)
+    {
+        pokemon[i] = prompt("Digite pokemon: ")
+        
+    }
+    // Imprime o vetor
+    // Ao contario, do ultimo pro primeiro
+    // lenght-1 porque do 0 ao 5 da 6 posições, e é 5 pq foi pedido 5pokemon
+    for(let j=pokemon.length-1; j>=0; j--)
+    {
+        alert(pokemon[j])
+    }
+
+
+</script>
