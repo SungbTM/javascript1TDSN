@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    /* 4 - Faça um programa em que o usuário digite 
+    o número de pessoas. Receba o nome de cada pessoa 
+    em um vetor. Imprima o vetor.*/
+    let nomes = [];
+   
+    let num = parseInt(prompt("Quantas pessoas são?"));
+    
+    for (let i = 0; i < num; i++)
+    {
+        nomes[i] = prompt("Digite o nome da pessoa " + (i + 1));
+    }
+    
+    for (let i = 0; i < num; i++)
+    {
+        alert("Nome da pessoa " + (i + 1) + nomes[i]);
+    }
+
+
+
+</script>

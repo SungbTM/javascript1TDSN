@@ -7,6 +7,18 @@ a MEDIA dos elementos do vetor.*/
 
 
 
+    let VET = [];
+    let soma = 0;
+
+    for (let i = 0; i < 5; i++) 
+    {
+        VET[i] = parseFloat(prompt("Digite um número real: "));
+        soma = soma + VET[i]; 
+    }
+
+    let media = soma / VET.length;
+
+    alert("A média dos números é: " + media);
 
 
 
